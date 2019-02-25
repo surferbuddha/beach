@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="surferbuddha.mysql.pythonanywhere-services.com",
-  user="surferbuddha",
-  passwd="yourMom81",
+  host="",
+  user="",
+  passwd="",
   database="surferbuddha$default"
 )
 
