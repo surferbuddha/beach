@@ -57,15 +57,15 @@ for currLetter in alphabet:
         #print(place)
         #print(names)
         #print(link)
-        #mycursor = mydb.cursor()
+        mycursor = mydb.cursor()
         #print(country)
 
-        #sql = "INSERT INTO posts_posts (title, body, link) VALUES (%s, %s, %s)"
-        #val = (str(names), str(country), str(links))
+        sql = "INSERT INTO posts_posts (title, body, link) VALUES (%s, %s, %s)"
+        val = (str(names), str(country), str(links))
 
-        #mycursor.execute(sql, val)
+        mycursor.execute(sql, val)
 
-        #mydb.commit()
+        mydb.commit()
 
     #print(mycursor.rowcount, "record inserted.")
 
