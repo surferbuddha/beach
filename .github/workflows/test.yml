@@ -14,6 +14,6 @@ jobs:
             username: ${{ secrets.SSH_USER }}
             passphrase: ${{ secrets.PASSPHRASE }}
             port: 22
-            key: ${{ secrets.SSH_PRIVATE_KEYKEY }}
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
             source: "test.txt"
             target: /home/elijah
