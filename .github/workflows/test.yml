@@ -15,4 +15,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
+          script: touch zz_nmrk.txt
 
