@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }} 
-          script: cd ${{ secrets.PROJECT_PATH }} && git pull
+          script: cd /home/elijah
