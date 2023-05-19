@@ -12,6 +12,7 @@ jobs:
         with:
             host: ${{ secrets.SSH_HOST }}
             username: ${{ secrets.SSH_USER }}
+            passphrase: ${{ secrets.PASSPHRASE }}
             port: 22
             key: ${{ secrets.SSH_PRIVATE_KEYKEY }}
             source: "test.txt"
