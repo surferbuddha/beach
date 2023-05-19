@@ -7,3 +7,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: my-step
         run: echo "Hello World!"
+      - name: Push to server
+        uses: appleboy/ssh-action@master
+
