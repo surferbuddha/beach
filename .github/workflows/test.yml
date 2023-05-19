@@ -7,13 +7,12 @@ jobs:
       - uses: actions/checkout@v1
       - name: my-step
         run: echo "Hello World!"
-      - name: Push to server
-        uses: appleboy/ssh-action@master
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@v0.1.4
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          port: 22
-          script: bash test.sh
-
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.SSH_USER }}
+            port: 22
+            key: ${{ secrets.SSH_PRIVATE_KEYKEY }}
+            source: "test.txt"
+            target: /home/elijah
